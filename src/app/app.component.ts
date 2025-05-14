@@ -1,16 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
+import { PrimaryButtonComponent } from "./components/primary-button/primary-button.component";
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeaderComponent],
+  imports: [HeaderComponent],
   template: `
-    <h1>Welcome to {{title}}!</h1>
 
     <app-header />
   `,
-  styles: [],
+  styles: ``,
 })
 export class AppComponent {
-  title = 'angular-ecomm';
+
 }
